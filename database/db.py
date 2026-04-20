@@ -6,7 +6,7 @@ def get_db(db_path=None):
     if db_path is None:
         db_path = os.path.join(
             os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-            "expense_tracker.db",
+            "spendly.db",
         )
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
